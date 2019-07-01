@@ -29,34 +29,29 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "*.js": [
-        "eslint --fix",
-        "git add"
-      ],
-      "src/**/*.json": [
-        "prettier --write",
-        "git add"
-      ],
-      "*.md": [
-        "prettier --write",
-        "git add"
-      ]
-    },
-    "ignore": [
-      "**/*.min.js"
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "src/**/*.json": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.md": [
+      "prettier --write",
+      "git add"
     ]
   },
   "devDependencies": {
     "env-cmd": "^9.0.3",
-    "eslint": "^5.16.0",
+    "eslint": "^6.0.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^4.3.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jest": "^22.6.3",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jest": "^22.7.1",
     "eslint-plugin-prettier": "^3.1.0",
-    "husky": "^2.3.0",
+    "husky": "^3.0.0",
     "jest": "^24.8.0",
-    "lint-staged": "^8.1.7"
+    "lint-staged": "^9.0.0"
   }
 }
